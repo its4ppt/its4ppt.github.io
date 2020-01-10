@@ -2,13 +2,14 @@
 <html>
 
     <head>
-        <title>Mobile Portfolio</title>
+        <title>THATSme</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="mobile portfolio, mobile portfolio site">
         <meta name="author" content="sam deering">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="js/jquery-1.8.3.min.js"></script>
         <script src="js/jquery.mobile-1.2.0.min.js"></script>
+        <link rel="manifest" href="its4ppt.webmanifest">
         <link href="css/jquery.mobile.structure-1.2.0.min.css" rel="stylesheet">
         <link href="css/jquery.mobile.theme-1.2.0.min.css" rel="stylesheet">
         <link href="css/jquery.mobile-1.2.0.min.css" rel="stylesheet">
@@ -34,31 +35,3 @@
 </style>
 </head>
 <body>
-<div data-role="page">
-
-
-  <div data-role="header">
-  	<a href="index.html" data-icon="user">AskMe!</a>
-  	<h1>( ͠° ͟ʖ ͡°)</h1>
-  	<a href="index.html" data-icon="shop">save</a>
-  </div>
-
-
-  <div role="main" class="ui-content">
-		<p>Page content goes here.</p>
-
-    <a href="/itsme/view/aboutthem" data-transition="flow">about them</a>
-
-
-
-
-	</div><!-- /content -->
-
-
-  <div data-role="footer" style="overflow:hidden;" class="footer">
-      <h4 style="text-align:center;">MayTheForceBeWithYou</h4>
-
-  </div>
-
-  </body>
-  </html>
