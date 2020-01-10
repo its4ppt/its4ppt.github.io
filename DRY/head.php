@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="js/jquery-1.8.3.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
-        <link rel="manifest" href="its4ppt.webmanifest">
+        <!-- <link rel="manifest" href="its4ppt.webmanifest"> -->
         <link href="css/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet">
         <link href="css/jquery.mobile.theme-1.4.5.min.css" rel="stylesheet">
         <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">

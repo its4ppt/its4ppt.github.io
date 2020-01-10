@@ -9,7 +9,7 @@
   <div role="main" class="ui-content">
 		<p>this is diffrent.</p>
 
-    <a href="index.php" data-transition="flip">about them</a>
+    <a href="index.php" data-transition="flip">back to home</a>
 
 
 
