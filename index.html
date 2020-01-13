@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="mobile portfolio, mobile portfolio site">
         <meta name="author" content="sam deering">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="js/jquery-1.8.3.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -35,25 +36,25 @@
 </style>
 </head>
 <body>
-
-
-<div data-role="page">
-
-
   <div data-role="header">
     <a href="index.html" data-icon="user">AskMe!</a>
     <h1>( ͠° ͟ʖ ͡°)</h1>
     <a href="index.html" data-icon="shop">save</a>
   </div>
 
+<div role="main" class="ui-content">
+    <div class="ui-grid-solo">
+		    <p>Words to live by:</p>
+      <div class="ui-grid-a">
+        <div class="ui-bar ui-bar-a ui-corner-all" style="height:60px"><p>“Don’t worry what others are doing. Do you!” – Russell Simmons</p>
+        </div>
+      </div>
+    </div><!-- /grid-a -->
 
-  <div role="main" class="ui-content">
-		<p>Page content goes here.</p>
-
-    <a href="fortest.php" data-transition="flow">about them</a>
-    <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">Sign in</a>
-   <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
-       <form>
+  <!-- <div class="ui-grid-solo">
+      <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">Sign in</a>
+      <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+        <form>
            <div style="padding:10px 20px;">
                <h3>Please sign in</h3>
                <label for="un" class="ui-hidden-accessible">Username:</label>
@@ -63,13 +64,65 @@
                <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Sign in</button>
            </div>
        </form>
-   </div>
+    </div>
+  </div> -->
 
+  <div class="ui-grid-solo">
+    <div  data-role="popup" id="personalinfo" data-theme="a" class="ui-corner-all">
+     <div data-role="collapsible" data-theme="a" data-content-theme="b">
+         <h4>basic</h4>
+         <p>hight : 180 cms or 5'8" if matric system confuses you! ( ͡°͜ ͡°)</p>
+         <p>weight : 720 N </p>
+         <p>colour : #d9e0b6 v(〄_〄)v </p>
+     </div>
+
+     <div data-role="collapsible" data-theme="a" data-content-theme="b">
+         <h4>education</h4>
+         <p>im hiughly educated. as u can sea!.٩(͡๏̯͡๏)۶</p>
+     </div>
+
+     <div data-role="collapsible" data-theme="a" data-content-theme="b">
+       <h4>occopation</h4>
+       <p>i made this page ! so take a hint ,,,</p>
+    </div>
+
+    <div data-role="collapsible" data-theme="a" data-content-theme="b">
+    <h4>parents</h4>
+    <ul data-role="listview">
+        <li><div data-role="collapsible" data-theme="a" data-content-theme="b">
+            <h4>papa AKA Father or Vader</h4>
+            <p>Singh ,Kedar</p>
+            <p>Ex-Navy,CPOR(tel)</p>
+            <p>age : born in 1960 do the math!~</p>
+        </div></li>
+        <li><div data-role="collapsible" data-theme="a" data-content-theme="b">
+            <h4>mummy AKA mother(india)</h4>
+            <p>Devi, Nisha</p>
+            <p>house wife</p>
+            <p>age: 56(till 2019)guess the year born</p>
+        </div></li>
+
+    </ul>
+    </div>
+
+
+   </div>
+  </div>
+  <div class="ui-grid-solo">
+    <a href="#personalinfo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">personalInfo#</a>
+  </div>
+    <div class="ui-grid-solo">
+    <a href="#external" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">check my fb</a>
+  </div>
+   <div data-role="popup" id="external" data-theme="a" class="ui-corner-all">
+       <object type="text/html" data="https://demos.jquerymobile.com/1.4.5/pages-dialog/" width="550px" height="600px" style="overflow:auto;border:5px">
+       </object>
+    </div>
 
 
 	</div><!-- /content -->
 
-
+  <a href="fortest.php" data-transition="flow">about them</a>
   <div data-role="footer" style="overflow:hidden;" class="footer">
       <h4 style="text-align:center;">MayTheForceBeWithYou</h4>
 
