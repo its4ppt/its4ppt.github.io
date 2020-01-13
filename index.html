@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>THATSme</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="mobile portfolio, mobile portfolio site">
+        <meta name="author" content="sam deering">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <!-- <link rel="manifest" href="its4ppt.webmanifest"> -->
+        <link href="css/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile.theme-1.4.5.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+        <link href="css/photoswipe.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script src="js/settings.js"></script>
+        <script src="js/klass.min.js"></script>
+        <script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
+
+
+
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+<div data-role="page">
+
+
+  <div data-role="header">
+    <a href="index.html" data-icon="user">AskMe!</a>
+    <h1>( ͠° ͟ʖ ͡°)</h1>
+    <a href="index.html" data-icon="shop">save</a>
+  </div>
+
+
+  <div role="main" class="ui-content">
+		<p>Page content goes here.</p>
+
+    <a href="fortest.php" data-transition="flow">about them</a>
+    <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">Sign in</a>
+   <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+       <form>
+           <div style="padding:10px 20px;">
+               <h3>Please sign in</h3>
+               <label for="un" class="ui-hidden-accessible">Username:</label>
+               <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+               <label for="pw" class="ui-hidden-accessible">Password:</label>
+               <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+               <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Sign in</button>
+           </div>
+       </form>
+   </div>
+
+
+
+	</div><!-- /content -->
+
+
+  <div data-role="footer" style="overflow:hidden;" class="footer">
+      <h4 style="text-align:center;">MayTheForceBeWithYou</h4>
+
+  </div>
+
+  </body>
+  </html>
