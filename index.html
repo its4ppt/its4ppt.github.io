@@ -8,6 +8,10 @@
         <meta name="author" content="sam deering">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://apis.google.com/js/platform.js" async defer></script>  <!-- this is google sign in script -->
+        <meta name="google-signin-client_id" content="921326091878-irlaoop669j317hsudlvl0ba3u23es5k.apps.googleusercontent.com">
+
         <script src="js/jquery-1.8.3.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
         <link rel="manifest" href="its4ppt.webmanifest">
@@ -44,13 +48,18 @@
 </head>
 <body>
   <div data-role="header">
-    <a href="index.html" data-icon="user">AskMe!</a>
+    <a href="thatsme.html" data-icon="user">AskMe!</a>
+
+
     <h1>( ͠° ͟ʖ ͡°)</h1>
     <a href="newtest.html" data-icon="shop" data-transition="slideup">save</a>
   </div>
 
 <div role="main" class="ui-content">
     <div class="ui-grid-solo">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#" onclick="signOut();">Sign out</a>
+
 		    <p>Words to live by:</p>
       <div class="ui-grid-a">
         <div class="ui-bar ui-bar-a ui-corner-all" style="height:60px"><p>“Don’t worry what others are doing. Do you!” – Russell Simmons</p>
@@ -142,4 +151,24 @@
   </div>
 
   </body>
+<script>
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+
+</script>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+
+
   </html>
