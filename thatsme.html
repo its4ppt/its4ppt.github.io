@@ -1,4 +1,4 @@
-html>
+<!DOCTYPE html>
 
     <head>
         <title>THATSme</title>
@@ -6,7 +6,6 @@ html>
         <meta name="keywords" content="mobile portfolio, mobile portfolio site">
         <meta name="author" content="sam deering">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/onsenui.css">
         <link rel="stylesheet" href="css/onsen-css-components.min.css">
         <script src="js/jquery-1.8.3.min.js"></script>
@@ -22,13 +21,13 @@ html>
 
       <ons-page id="helloworld-page">
         <ons-toolbar>
-          <div class="left"><ons-button id="push-left">me</ons-button>
+          <div class="left"><ons-button  modifier="outline" class="button-margin" id="push-left">me</ons-button>
             <ons-toolbar-button>
               <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
             </ons-toolbar-button>
           </div>
           <div class="center"></div>
-          <div class="right"><ons-button id="push-right" badge="this">SOCIALS</ons-button>
+          <div class="right"><ons-button class="button-margin" id="push-right" badge="this">SOCIALS</ons-button>
             <ons-toolbar-button>
               <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
             </ons-toolbar-button>
@@ -71,7 +70,7 @@ html>
     </body>
         <script type="text/javascript">
           document.addEventListener('init', function(event) {
-          console.log('This is a lifecycle event!', event.target);
+
 
     var page = event.target;
     if (page.id === 'helloworld-page') {
